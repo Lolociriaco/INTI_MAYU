@@ -1,50 +1,4 @@
 
-/*TITULO INDEX*/
-
-.background-container{
-    background-image: url(sierras-img.jpeg);
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    box-shadow: 1px 4px 19px -6px rgba(0,0,0,0.75);
--webkit-box-shadow: 1px 4px 19px -6px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 4px 19px -6px rgba(0,0,0,0.75);
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Color negro con 30% de opacidad */
-    z-index: 1;
-}
-
-.slogan {
-    position: absolute;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta el centrado */
-    color: white;
-    text-align: center;
-    z-index: 50;
-}
-
-.slogan h2{
-    margin: -10px; /* Elimina cualquier margen por defecto */
-    padding: 10px 0; /* Espaciado opcional entre títulos */
-    font-family: "Bebas Neue";
-    letter-spacing: 9px;
-}
-
-.slogan h4{
-    font-family: "sans-serif";
-}
-
 /*IMAGENES INDEX*/
 
 #images-container img{
@@ -265,69 +219,6 @@
 }
 
 
-/*SEGUINOS EN INSTAGRAM*/
-
-.instagram{
-    position: static;
-    background-color: #d5ccaf;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    height: 470px;
-}
-
-.instagram h2{
-    color:#6a6a6a;
-    font-weight: 400;
-    margin: 25px 0 0px 0;
-    font-size: 35px;
-    font-family: "Prata";
-}
-
-.instagram a{
-    color:#bb4a4a;
-    font-weight: 500;
-    font-family: "Prata";
-}
-
-.instagram-pics{
-    height: 450px;
-    width: 100%;
-    padding: 15px 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: row;
-    overflow: hidden;
-    position: relative;
-}
-
-.ig-container img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s ease;
-}
-
-.ig-container{
-    margin: 13px;
-    width: 100%; /* Ajusta el tamaño según tu diseño */
-    height: 290px;
-    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
-    position: relative;
-    background-color: rgba(205, 205, 205, 0.7);
-    box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75); 
-}
-
-.ig-container img:hover{
-    transform: scale(1.06);
-    overflow: hidden;
-}
-
 /*MEDIA SCREEN PARA CELULAR NAV-BAR*/
 @media screen and (max-width: 870px) {
 /*IMAGES CONTAINER PARA CELULAR*/
@@ -345,15 +236,6 @@
         height: 800px;
     }
 
-    .instagram h2{
-        color:#6a6a6a;
-        font-weight: 400;
-        margin: 25px 0 0px 0;
-        font-size: 35px;
-        font-family: "Prata";
-    }
-    
-
     .images img {
         width: 100%;
         object-fit: cover; /* Mantén el ajuste de objeto */
@@ -364,40 +246,6 @@
     .images.small:nth-child(2) {
         grid-column: 1 / 2; /* Las imágenes ocuparán toda la fila */
         grid-row: auto; /* Resetea la fila */
-    }
-
-    /*SEGUINOS EN INSTAGRAM*/
-
-    .ig-container:nth-child(3), .ig-container:last-child{
-        visibility: hidden;
-        display: none;
-    }
-
-    .instagram{
-        height: 440px;
-    }
-
-    .instagram-pics{
-        padding: 15px 20px;
-    }
-
-    .ig-container{
-        margin: 5px;
-    }
-
-    .instagram h2{
-        color:#6a6a6a;
-        font-weight: 400;
-        margin: 25px 0 0px 0;
-        font-size: 25px;
-        font-family: "Prata";
-    }
-    
-    .instagram a{
-        color:#bb4a4a;
-        font-weight: 500;
-        font-family: "Prata";
-        font-size: 20px;
     }
 
 
