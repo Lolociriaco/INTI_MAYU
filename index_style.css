@@ -56,7 +56,7 @@
     grid-template-columns: 2fr 1fr;
     grid-row: 1fr 1fr;
     grid-gap: 10px;
-    margin: 4%;
+    margin: 60px 4%;
     height: 700px;
     max-height: 700px;
 }
@@ -114,9 +114,6 @@
     justify-content: left;
 }
 
-.balnearios{
-    justify-content: right;
-}
 
 .img-conoce-mas img{
     width: 100%;
@@ -156,8 +153,14 @@
 }
 
 .balnearios-text{
+    top: 230px;
     right: 60vw;
     left: 4%;
+}
+
+
+.balnearios{
+    justify-content: right;
 }
 
 .conoce-mas-text h2{
@@ -195,6 +198,8 @@
     background: #e67e22;
     padding: 10px 32px;
 }
+
+/*SPACE BEETWEN*/
 
 .space-beetwen{
     position: static;
@@ -290,7 +295,7 @@
 .instagram-pics{
     height: 450px;
     width: 100%;
-    padding: 15px 50px 10px 50px;
+    padding: 15px 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -336,7 +341,7 @@
         grid-template-columns: 1fr;
         grid-row: 1fr;
         grid-gap: 15px;
-        margin: 4%;
+        margin: 30px 4%;
         height: 800px;
     }
 
@@ -361,6 +366,194 @@
         grid-row: auto; /* Resetea la fila */
     }
 
-    /*TARJETA CONOCE MAS PARA CELULAR*/
+    /*SEGUINOS EN INSTAGRAM*/
+
+    .ig-container:nth-child(3), .ig-container:last-child{
+        visibility: hidden;
+        display: none;
+    }
+
+    .instagram{
+        height: 440px;
+    }
+
+    .instagram-pics{
+        padding: 15px 20px;
+    }
+
+    .ig-container{
+        margin: 5px;
+    }
+
+    .instagram h2{
+        color:#6a6a6a;
+        font-weight: 400;
+        margin: 25px 0 0px 0;
+        font-size: 25px;
+        font-family: "Prata";
+    }
+    
+    .instagram a{
+        color:#bb4a4a;
+        font-weight: 500;
+        font-family: "Prata";
+        font-size: 20px;
+    }
+
+
+    /*TARGETA CONOCE MAS*/
+
+.conoce-mas-container{  
+    position: relative;
+    margin: 30px 4%;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-conoce-mas img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    background-position: center;
+}
+
+.img-conoce-mas{
+    margin: 0;
+    overflow: hidden;
+    max-height: 250px;
+    width: 80vw;
+    justify-content: center;
+    box-shadow: 1px 4px 29px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 4px 29px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 4px 29px -6px rgba(0,0,0,0.75);
+}
+
+.conoce-mas-text, .balnearios-text{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 80vw;
+    max-height: 200px;
+    background: rgba(255, 255, 255, 1);
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 14px;
+    box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
+}
+
+
+.conoce-mas-text h2{
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.conoce-mas-text h3{
+    margin: 5px 0;
+    color: #666;
+}
+
+.conoce-mas-text h4{
+    margin: 10px 0 25px 0;
+    color: #666;
+}
+
+.conoce-mas-text a{
+    margin: 15px 0;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #d35400;
+    color: white;
+    position: static;
+    border: none;
+    box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.conoce-mas-text a:hover{
+    background: #e67e22;
+    padding: 10px 32px;
+}
+    /*SPACE BEETWEN*/
+
+    .space-beetwen{
+        position: static;
+        background-color: #d5ccaf;
+        height: 140px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .space-beetwen h2{
+        color:#6a6a6a;
+        font-weight: 400;
+        font-size: 25px;
+        font-family: "Prata";
+    }
+    
+    .space-beetwen h4{
+        color:#fbfbfb;
+        font-weight: 500;
+        font-size: 18px;
+        font-family: "Edu AU VIC WA NT Hand";
+    }
+
+    /*IMAGE BEETWEN*/
+    
+    .image-beetwen{
+        position: relative;
+        background-image: url(sierras-img.jpeg);
+        height: 250px;
+        width: 100%;
+
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .image-beetwen-text{
+        margin-left: 0;
+        height: 150px;
+        width: 70vw;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: rgba(205, 205, 205, 0.6);
+        box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 4px 20px -6px rgba(0,0,0,0.75);
+    }
+    
+    
+    .image-beetwen-text h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .image-beetwen-text h3{
+        font-size: 15px;
+    }
+    
+    /*SEGUINOS EN IG RESPONSIVE*/
 
 }
