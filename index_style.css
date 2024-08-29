@@ -224,7 +224,7 @@
 /*IMAGES CONTAINER PARA CELULAR*/
 
     *{
-        overflow: visible;
+        overflow: hidden;
     }
 
     #images-container{
