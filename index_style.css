@@ -179,6 +179,8 @@
     font-family: "Edu AU VIC WA NT Hand";
 }
 
+
+
 .image-beetwen{
     position: relative;
     background-image: url(sierras-img.jpeg);
@@ -224,7 +226,7 @@
 /*IMAGES CONTAINER PARA CELULAR*/
 
     *{
-        overflow: hidden;
+        overflow: visible;
     }
 
     #images-container{

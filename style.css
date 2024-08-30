@@ -71,6 +71,39 @@ header .logo{
 
 
 
+/*BOTON WHATSAPP*/
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366; /* Color de WhatsApp */
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851; /* Color al pasar el cursor */
+}
+
+.whatsapp-button img {
+    width: 60%;
+    height: 60%;
+    display: block;
+}
+
+.whatsapp-button:active {
+    transform: scale(0.9);
+}
+
+
 /*TITULO INDEX*/
 
 .background-container{

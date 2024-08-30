@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/*TARGETA DE COMODITIES DE LAS CABAÑAS*/
+.card-container{
+display: flex;
+justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1400px;
+    margin: 50px;
+    border-radius: 8px;
+    overflow: visible;
+}
+
+.image-container {
+    flex: 1 1 40%;
+    max-width: 50%;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    flex: 1 1 60%;
+    padding: 20px;
+    background-color: #ede9e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content h2 {
+    color: #e65a42;
+    font-size: 24px;
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.content ul li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+
+/*SPACE BEETWEN*/
+
+.space-beetwen{
+    position: static;
+    background-color: #d5ccaf;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.space-beetwen h2{
+    color:#6a6a6a;
+    font-weight: 400;
+    font-size: 35px;
+    font-family: "Prata";
+}
+
+.space-beetwen h4{
+    color:#fbfbfb;
+    font-weight: 500;
+    font-family: "Edu AU VIC WA NT Hand";
+}
+
+/*TARGETA EXPERIENCIAS*/
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.text-section {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 350px;
+}
+
+.text-section h1 {
+    color: #d35400;
+    font-size: 36px;
+}
+
+.text-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.reserve-button {
+    background-color: #d35400;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.images-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;
+    height: 700px;
+}
+
+.image {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 870px) {
+    /*TARGETA SERVICIOS*/
+
+
+    /*SPACE BEETWEN*/
+
+    .space-beetwen{
+        position: static;
+        background-color: #d5ccaf;
+        height: 140px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;        
+}
+        
+    .space-beetwen h2{
+        color:#6a6a6a;
+        font-weight: 400;
+        font-size: 25px;
+        font-family: "Prata";
+    }
+        
+    .space-beetwen h4{
+        color:#fbfbfb;
+        font-weight: 500;
+        font-size: 18px;
+        font-family: "Edu AU VIC WA NT Hand";
+    }
+
+    /*EXPERIENCIAS RESPONSIVE*/
+
+    .container .image:nth-child(2) {
+        display: none;
+        visibility: hidden;
+    }
+}

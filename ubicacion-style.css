@@ -1,16 +1,63 @@
 
 /*MAPA DE GOOGLE*/
 .map-container {
-    margin: 50px 250px;
+    margin: 40px 250px;
 }
 
-body{
-    background-color: rgb(176, 216, 243);
-}
 .map-container iframe {
     width: 100%;
     height: 550px;
     border: 0;
+}
+
+.background-container h2{
+
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+/*TEXTO TRASLASIERRA*/
+
+.ubicacion-text-container{
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    text-align: center;       /* Centra el texto dentro del párrafo */
+    flex-wrap: wrap;          /* Permite que el contenido se ajuste a múltiples líneas si es necesario */
+    flex-direction: column;
+    width: 100%;
+}
+
+.ubicacion-text-container h3{
+    font-size: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 35px;
+}
+
+.ubicacion-text-container h4{
+    font-size: 20px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+/*TEXTO UBICACION DEL COMPLEJO*/
+
+.ubi-complejo-text{
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    text-align: center;
+}
+
+.ubi-complejo-text h2{
+    margin: 60px 0 0 0;
+    font-size: 35px;
 }
 
 
@@ -18,6 +65,6 @@ body{
     /*MAPA DE GOOGLE*/
 
     .map-container{
-        margin: 40px 50px;
+        margin: 30px 50px;
     }
 }
