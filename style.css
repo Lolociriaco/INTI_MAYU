@@ -44,7 +44,7 @@ header .logo{
 .nav_container .nav_links li, .button_contactanos{
     display: inline-block;
     flex-direction: row;
-    padding:  0 20px;
+    padding:  0 10px;
     transition: 200ms;
 }
 
@@ -263,7 +263,7 @@ header .logo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     margin: 5px;
 }
 
