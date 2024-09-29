@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@400;500;700;900&display=swap');
 
 /*MAPA DE GOOGLE*/
 .map-container {
@@ -37,13 +38,18 @@
 }
 
 .ubicacion-text-container h4{
-    font-size: 20px;
+    color: rgb(54, 54, 54);
+    font-size: 16px; 
+    font-family: "Vesper Libre", 'Merriweather Fallback';
+    font-weight: 500;
+    font-style: italic;
+    line-height: 30px;
     padding: 0 40px;
     display: flex;
     justify-content: center;
     max-width: 1500px;
     text-align: center;
-    margin: 0 0 15px 0;
+    margin: 50px 80px 0 80px;
 }
 
 /*TEXTO UBICACION DEL COMPLEJO*/

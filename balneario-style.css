@@ -1,0 +1,14 @@
+.carousel{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 800px;
+}
+
+.carousel img{
+    display: block;
+    margin: auto;
+    width: 50%; /* Ajusta este valor para escalar la imagen */
+    height: auto; /* Mantener la proporción */
+    object-fit: cover;
+}

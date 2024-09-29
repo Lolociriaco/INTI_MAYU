@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Jacquard+12+Charted&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
@@ -10,7 +11,7 @@
 }
 
 body{
-    background-color:  #f2f3ed;
+    background-color:  #f9faf6;
     font-size: 20px;
 }
 
@@ -18,7 +19,7 @@ body{
 
 header .logo img{
     width: auto;
-    height: 60px;
+    height: 53px;
     border-radius: 50%;
 }
 
@@ -31,14 +32,23 @@ header .logo{
     background-color: #778e69;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 70px;
     padding: 0 4%;
+    gap: 20px;
 }
 
 .nav_links a{
     color: #ffffffff;
     list-style: none;
     text-decoration: none;
+    font-family: "EB Garamond", serif;
+  font-weight: 600;
+  transition: 200ms;
+}
+
+.nav_links a:hover{
+    color: #e5ebba;
+
 }
 
 .nav_container .nav_links li, .button_contactanos{
@@ -50,16 +60,44 @@ header .logo{
 
 
 .nav_container .nav_links li:hover{
-    transform: scale(1.06);
+    transform: scale(1.02);
+}
+
+.nav_links  {
+    flex: 1; /* Ocupa el espacio disponible */
+    display: flex;
+    justify-content: center;
+    margin-left: 55px;
+    gap: 20px;
+    
 }
 
 .button_contactanos button{
     border-radius: 50px;
-    padding: 10px 15px;
-    margin-right: -20px;
-    font-size: 17px;
+    padding: 8px 12px;
+    margin-right: -25px;
+    font-size: 15px;
     border: none;
+    background-color: #fcfafa;
+    transition: background-color 0.3s cubic-bezier(0.3, 0, 0.5, 1);
 }
+
+.button_contactanos button:hover {
+    background-color: #f3f4f6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+  
+
+.button_contactanos button:active {
+    background-color: #e7ebf0;
+    box-shadow: rgba(10, 10, 10, 0.233) 0 1px 0 inset;
+    transition: none 0s;
+}
+
+ .button_contactanos button:focus {
+    outline: 1px transparent;
+  }
 
 .button_contactanos button{
     display: inline-block;
@@ -144,10 +182,13 @@ header .logo{
     padding: 10px 0; /* Espaciado opcional entre títulos */
     font-family: "Bebas Neue";
     letter-spacing: 9px;
+    font-size: 45px;
 }
 
 .slogan h4{
-    font-family: "sans-serif";
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 /*SEGUINOS EN INSTAGRAM*/
