@@ -46,3 +46,33 @@ function copyEmail(){
         button.classList.add("bi-clipboard");
     }, 2000);
 }
+
+
+///CARRUSEL 
+
+
+let indice = 0;
+mostrarImagenes(indice);
+
+// Cambia de imagen cuando se presionan las flechas
+function cambiarImagen(n) {
+    mostrarImagenes(indice += n);
+}
+
+// Mostrar imagen actual
+function mostrarImagenes(n) {
+    let i;
+    let items = document.getElementsByClassName("carrusel-item");
+
+    if (n >= items.length) { indice = 0 }
+    if (n < 0) { indice = items.length - 1 }
+
+    for (i = 0; i < items.length; i++) {
+        items[i].style.display = "none";
+        items[i].classList.remove("active");
+    }
+
+    items[indice].style.display = "block";
+    items[indice].classList.add("active");
+}
+

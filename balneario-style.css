@@ -1,14 +1,96 @@
-.carousel{
-    display: flex;
-    justify-content: center;
-    width: 80vw;
-    height: 800px;
+/* Estilos generales para el carrusel */
+.carrusel-container {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    margin: 60px auto;
+    display: grid;
+    justify-items: center; /* Centra horizontalmente los elementos */
+    align-items: center;   /* Asegura que el carrusel se alinee verticalmente también */
 }
 
-.carousel img{
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carrusel-item {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;   /* Hace que la imagen cubra todo el contenedor */
+    background-position: center;  /* Centra la imagen en su contenedor */
+    position: relative;  /* Para poder posicionar el pie de foto sobre la imagen */
+}
+
+.carrusel-item.active {
     display: block;
+    text-align: center;
+}
+
+/* Estilos de las imágenes */
+.imagen-carrusel {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+
+/* Estilos para el pie de foto */
+.caption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Flechas de navegación */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.text-container{
     margin: auto;
-    width: 50%; /* Ajusta este valor para escalar la imagen */
-    height: auto; /* Mantener la proporción */
-    object-fit: cover;
+    width: 80vw;
+    padding-bottom: 20px;
+}
+
+.text-container p{
+    margin: 30px 0;
+
 }

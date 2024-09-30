@@ -44,6 +44,8 @@ header .logo{
     font-family: "EB Garamond", serif;
   font-weight: 600;
   transition: 200ms;
+  display: flex;
+  align-items: end;
 }
 
 .nav_links a:hover{
