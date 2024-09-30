@@ -66,9 +66,6 @@ header .logo{
 }
 
 .nav_links  {
-    flex: 1; /* Ocupa el espacio disponible */
-    display: flex;
-    justify-content: center;
     margin-left: 55px;
     gap: 20px;
     
@@ -453,6 +450,10 @@ header .logo{
         background-color: rgb(194, 194, 194);
         overflow-x: visible;
 
+    }
+
+    .nav_links{
+        margin: 0;
     }
 
     #selected{
