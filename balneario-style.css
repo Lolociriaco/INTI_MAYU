@@ -1,8 +1,9 @@
 /* Estilos generales para el carrusel */
 .carrusel-container {
     position: relative;
-    width: 1000px;
-    height: 500px;
+    width: 75vw;
+    max-width: 1100px;
+    height: 650px;
     margin: auto;
     overflow: hidden;
     margin: 60px auto;
@@ -19,12 +20,13 @@
 
 .carrusel-item {
     position: relative;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;   /* Hace que la imagen cubra todo el contenedor */
-    background-position: center;  /* Centra la imagen en su contenedor */
-    position: relative;  /* Para poder posicionar el pie de foto sobre la imagen */
+    width: 100%;
+    max-width: 1100px;
+    height: 650px; /* Puedes ajustar esta altura según necesites */
+    overflow: hidden; /* Esto evitará que la imagen se desborde */
 }
 
 .carrusel-item.active {
@@ -33,12 +35,12 @@
 }
 
 /* Estilos de las imágenes */
-.imagen-carrusel {
-    width: 1000px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imagen-carrusel{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
     transition: transform 0.3s ease;
     overflow: hidden;
 }
