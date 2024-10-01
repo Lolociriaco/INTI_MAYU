@@ -184,7 +184,7 @@
 
 .image-beetwen{
     position: relative;
-    background-image: url(sierras-img.jpeg);
+    background-image: url(IMAGENES/sierras.jpg);
     height: 250px;
     width: 100%;
     background-position: center;
@@ -367,7 +367,7 @@
     
     .image-beetwen{
         position: relative;
-        background-image: url(sierras-img.jpeg);
+        background-image: url(IMAGENES/sierras.jpg);
         height: 250px;
         width: 100%;
 

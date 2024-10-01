@@ -149,7 +149,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 80px;
+    margin: 20px 100px;
     max-width: 1800px; /* Tamaño máximo para tarjetas grandes */
     padding: 20px;
     border-radius: 10px;

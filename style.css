@@ -46,6 +46,7 @@ header .logo{
   transition: 200ms;
   display: flex;
   align-items: end;
+  font-size: 20px;
 }
 
 .nav_links a:hover{
@@ -431,7 +432,7 @@ header .logo{
         opacity: 1;
         visibility: visible;
         position: absolute;
-        right: 60px;
+        right: 75px;
         overflow-x: hidden;
     }
     .nav_links li{
