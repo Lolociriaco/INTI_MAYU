@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,20 +13,21 @@ display: flex;
 justify-content: center;
 }
 
-.card {
+.card{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
     max-width: 1200px;
     margin: 50px;
     border-radius: 8px;
     overflow: visible;
 }
 
+
 .image-container {
-    flex: 1 1 40%;
+    flex: 1 1 35%;
     justify-content: right;
     max-width: 50%;
 }
@@ -37,33 +40,109 @@ justify-content: center;
 }
 
 .content {
-    flex: 1 1 60%;
-    padding: 20px;
+    flex: 1 1 65%;
+    padding: 40px;
     background-color: #ede9e6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .content h2 {
     color: #e65a42;
-    font-size: 24px;
+    font-size: 35px;
+    font-style: italic;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .content p {
     margin: 10px 0;
     font-size: 18px;
+    color: #2c2c2c;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .content ul {
     list-style-type: disc;
     padding-left: 20px;
     margin: 0;
+    color: #454545;
 }
 
 .content ul li {
     margin: 8px 0;
-    font-size: 16px;
+    font-size: 15px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
+
+/*FACILITIES*/
+
+.facilities-container{
+    display: flex;
+    justify-content: center;
+}
+
+.facilities-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80vw;
+    margin: 50px;
+    border-radius: 8px;
+    overflow: visible;
+}
+
+
+.facilities-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #ede9e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.facilities-content h2 {
+    color: #e65a42;
+    font-size: 35px;
+    font-style: italic;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.facilities-content p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #2c2c2c;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.facilities-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    color: #454545;
+    display: flex;
+    flex-direction: row;
+}
+
+.facilities-content ul li {
+    margin: 8px 30px;
+    font-size: 15px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
 
 /*SPACE BEETWEN*/
 
@@ -120,6 +199,7 @@ justify-content: center;
     color: #555;
     line-height: 1.6;
     margin-top: 20px;
+
 }
 
 .reserve-button {
@@ -136,8 +216,8 @@ justify-content: center;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    flex: 1;
-    height: 700px;
+    flex: 1.5;
+    height: auto;
 }
 
 .image {
@@ -149,6 +229,35 @@ justify-content: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+/*SPACE BEETWEN*/
+
+.space-beetwen{
+    position: static;
+    background-color: #d5ccaf;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.space-beetwen h2{
+    color:#6a6a6a;
+    font-weight: 400;
+    font-size: 35px;
+    font-family: "Prata";
+}
+
+.space-beetwen h4{
+    color:#fbfbfb;
+    font-weight: 500;
+    font-family: "Edu AU VIC WA NT Hand";
+}
+
+
+
 
 @media (max-width: 870px) {
     /*TARGETA SERVICIOS*/
@@ -186,5 +295,33 @@ justify-content: center;
     .container .image:nth-child(2) {
         display: none;
         visibility: hidden;
+    }
+
+
+    /*SPACE BEETWEN*/
+
+    .space-beetwen{
+        position: static;
+        background-color: #d5ccaf;
+        height: 140px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .space-beetwen h2{
+        color:#6a6a6a;
+        font-weight: 400;
+        font-size: 25px;
+        font-family: "Prata";
+    }
+    
+    .space-beetwen h4{
+        color:#fbfbfb;
+        font-weight: 500;
+        font-size: 18px;
+        font-family: "Edu AU VIC WA NT Hand";
     }
 }
