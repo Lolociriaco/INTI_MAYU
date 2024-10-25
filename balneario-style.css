@@ -138,12 +138,13 @@ p {
 }
 
 .tarjeta-container{
-    position: relative;
+
     display: flex;
     justify-items: center;
+    align-items: center;
     flex-direction: column;
     margin: 20px auto;
-    width: 100vw;
+    width: 100%;
 }
 
 /* Tarjeta Layout */

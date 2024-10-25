@@ -272,6 +272,7 @@ header .logo{
     font-size: 15px;
     color: #f48e1bdd;
     margin-right: 20px;
+    cursor: default;
 }
 
 .pie-pagina h2{
@@ -294,6 +295,7 @@ header .logo{
     flex-direction: column;
     text-decoration: none;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .footer-ubicacion a:hover h3{
@@ -306,6 +308,7 @@ header .logo{
     justify-content: center;
     align-items: center;
     margin: 5px;
+    cursor: default;
 }
 
 #icon, #iconEmail{
@@ -317,6 +320,7 @@ header .logo{
     overflow: hidden;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
 
     border-radius: 5px;

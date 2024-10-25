@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
 
 /*TARGETA DE COMODITIES DE LAS CABAÑAS*/
 .card-container{
@@ -20,7 +14,7 @@ justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 1200px;
-    margin: 50px;
+    margin: 50px auto;
     border-radius: 8px;
     overflow: visible;
 }
@@ -94,7 +88,7 @@ justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     width: 80vw;
-    margin: 50px;
+    margin: 50px auto;
     border-radius: 8px;
     overflow: visible;
 }
@@ -104,6 +98,7 @@ justify-content: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     padding: 40px;
     background-color: #ede9e6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -129,20 +124,31 @@ justify-content: center;
 
 .facilities-content ul {
     list-style-type: disc;
-    padding-left: 20px;
-    margin: 0;
+    margin-top: 15px;
     color: #454545;
     display: flex;
     flex-direction: row;
 }
 
 .facilities-content ul li {
-    margin: 8px 30px;
+    margin: 8px 60px;
     font-size: 15px;
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: italic;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+.facilities-content ul li img{
+    margin-top: 10px;
+    display: block;
+    height: 70px;
+    width: 70;
+}
+
 
 /*SPACE BEETWEN*/
 
@@ -260,9 +266,79 @@ justify-content: center;
 
 
 @media (max-width: 870px) {
-    /*TARGETA SERVICIOS*/
+    /*TARGETA EXPERIENCIAS*/
+
+    .images-section{
+        width: 90vw;
+    }
+
+    .image {
+        overflow: hidden;
+        width: 100%;
+        height: 450px;
+        max-width: 90vw;
+        margin: 0 auto 25px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
+    }
+    
+
+    /*NUESTROS SERVICIOS*/
+
+    .image-container{
+        display: flex;
+        flex: 1;
+        width: 100%;
+        max-width: 100%;
+        height: 0px;
+    }
+
+    .image-container img{
+        object-fit: cover;
+    }
+
+    .responsive-image{
+        height: 320px;
+    }
+
+    .card{
+        width: 90vw;
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        flex: 1;
+        padding: 20px;
+    }
 
 
+    /*INSTALACIONES*/
+    .facilities-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .facilities-content ul li{
+        margin: 20px auto;
+    }
+
+    .facilities-card{
+        width: 90vw;
+        margin: 50px auto;
+    }
+
+    .facilities-content{
+        padding: 40px 0; 
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+    }
     /*SPACE BEETWEN*/
 
     .space-beetwen{

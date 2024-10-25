@@ -76,3 +76,34 @@ function mostrarImagenes(n) {
     items[indice].classList.add("active");
 }
 
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+let currentSlideIndex = 0;
+let startX, endX;
+
+function moveToSlide(track, currentIndex) {
+    const amountToMove = -currentIndex * 100;
+    track.style.transform = `translateX(${amountToMove}%)`;
+}
+
+// Detectar el inicio del toque
+track.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+// Detectar el final del toque
+track.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX;
+    if (startX > endX + 50) {
+        // Deslizar hacia la izquierda
+        if (currentSlideIndex < slides.length - 1) {
+            currentSlideIndex++;
+        }
+    } else if (startX < endX - 50) {
+        // Deslizar hacia la derecha
+        if (currentSlideIndex > 0) {
+            currentSlideIndex--;
+        }
+    }
+    moveToSlide(track, currentSlideIndex);
+});
