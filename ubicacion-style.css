@@ -2,7 +2,7 @@
 
 /*MAPA DE GOOGLE*/
 .map-container {
-    margin: 40px 250px;
+    margin: 40px 200px;
 }
 
 .map-container iframe {
@@ -29,17 +29,10 @@
     width: 100%;
 }
 
-.ubicacion-text-container h3{
-    font-size: 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 35px;
-}
 
 .ubicacion-text-container h4{
     color: rgb(54, 54, 54);
-    font-size: 16px; 
+    font-size: 20px; 
     font-family: "Vesper Libre", 'Merriweather Fallback';
     font-weight: 500;
     font-style: italic;
@@ -71,6 +64,11 @@
     /*MAPA DE GOOGLE*/
 
     .map-container{
-        margin: 30px 50px;
+        margin: 30px 20px;
+    }
+
+    .ubicacion-text-container h4{
+        padding: 0;
+        margin: 30px 30px 0 30px;
     }
 }

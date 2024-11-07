@@ -20,7 +20,7 @@ body{
 header .logo img{
     width: auto;
     height: 53px;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 header .logo{
@@ -107,7 +107,9 @@ header .logo{
     display: none;
 }
 
-
+.second-overlay {
+    display: none;
+}
 
 /*BOTON WHATSAPP*/
 
@@ -201,7 +203,7 @@ header .logo{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    height: 470px;
+    height: 600px;
 }
 
 .instagram h2{
@@ -222,7 +224,8 @@ header .logo{
 .instagram-pics{
     height: 450px;
     width: 100%;
-    padding: 15px 50px;
+    padding: 15px 150px;
+    gap: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -236,12 +239,13 @@ header .logo{
     width: 100%;
     height: 100%;
     transition: 0.5s ease;
+    background-position: 60%;
 }
 
 .ig-container{
     margin: 13px;
     width: 100%; /* Ajusta el tamaño según tu diseño */
-    height: 290px;
+    height: 95%;
     overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
     position: relative;
     background-color: rgba(205, 205, 205, 0.7);
@@ -366,8 +370,9 @@ header .logo{
         position: fixed;
         
         display: flex;
+        justify-content: center;
         bottom: 0;
-        padding: 3.5rem;
+        padding: 3.9rem;
         transition: 0.5s;
         right: -300px;
     }
@@ -376,6 +381,7 @@ header .logo{
     .nav_container .nav_links li, .button_contactanos{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-content: space-around;
         align-items: center;
     }
@@ -402,10 +408,31 @@ header .logo{
         visibility: hidden;
     }
 
+    .second-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -860px; /* Comienza fuera de la pantalla */
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2); /* Color negro con 90% de opacidad */
+        z-index: -10;
+        opacity: 0; /* Oculto inicialmente */
+        transition: right 0.2s ease, opacity 0.8s ease;
+    }
+    
+    .second-overlay-visible {
+        right: 0; /* Desliza la barra hacia la posición visible */
+        opacity: 1; /* Hace que el overlay sea visible */
+        z-index: 10;
+    }
+
     .cerrar_menu{
         display: none;
         border-radius: 0;
+        position: fixed;
         border: 0;
+        right: 15px;
         width: 70px;
         background-color: transparent;
         cursor: pointer;
@@ -426,16 +453,15 @@ header .logo{
     .nav-visible{
         opacity: 1;
         visibility: visible;
-        position: absolute;
+        position: fixed;
         overflow: hidden;
         right: 0;
-        box-shadow: 0 0 0 100vw rgba(0,0,0,0.5);
     }
 
     .button-contactanos-visible{
         opacity: 1;
         visibility: visible;
-        position: absolute;
+        position: fixed;
         right: 75px;
         overflow-x: hidden;
     }
