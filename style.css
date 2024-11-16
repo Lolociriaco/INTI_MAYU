@@ -507,16 +507,25 @@ header .logo{
     }
 
     .instagram{
-        height: 440px;
+        height: 400px;
+        
     }
+
 
     .instagram-pics{
-        padding: 15px 20px;
+        height: 400px;
+        width: 100%;
+        padding: 15px 0;
+        gap: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: row;
+        overflow: hidden;
+        position: relative;
     }
 
-    .ig-container{
-        margin: 5px;
-    }
+
 
     .instagram h2{
         color:#6a6a6a;

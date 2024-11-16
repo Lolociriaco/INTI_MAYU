@@ -1,7 +1,7 @@
 /* Estilos generales para el carrusel */
 .carrusel-container {
     position: relative;
-    width: 75vw;
+    width: 80vw;
     max-width: 1100px;
     height: 650px;
     overflow: hidden;
@@ -199,6 +199,11 @@ p {
 }
 
 @media (max-width: 992px) {
+
+    .carrusel-container{
+        width: 95vw;
+    }
+
     .tarjeta {
         flex-direction: column;
         margin: 20px;
@@ -226,7 +231,11 @@ p {
     
     p {
         line-height: 1.4;
-        font-size: 14px;    
+        font-size: 16px;    
+    }
+
+    .text-container{
+        width: 90vw;
     }
     
     .texto-tarjeta a{

@@ -54,6 +54,50 @@ function copyEmail(){
 }
 
 
+
+
+// -------- MODAL ----------
+
+
+let slideIndex = 0;
+
+function openModal(index) {
+    document.getElementById("modal").style.display = "block";
+    showSlide(index);
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+function showSlide(index) {
+    const slides = document.getElementsByClassName("modal-slide");
+    slideIndex = index;
+    
+    // Ocultar todas las imágenes
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    // Mostrar la imagen seleccionada
+    slides[slideIndex].style.display = "block";
+}
+
+function changeSlide(step) {
+    const slides = document.getElementsByClassName("modal-slide");
+    slideIndex += step;
+    
+    // Asegurarse de que el índice está dentro de los límites
+    if (slideIndex >= slides.length) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    
+    showSlide(slideIndex);
+}
+
+
+
+
+
 ///CARRUSEL 
 
 
@@ -66,12 +110,12 @@ function cambiarImagen(n) {
 }
 
 // Mostrar imagen actual
-function mostrarImagenes(n) {
+function mostrarImagenes(indice) {
     let i;
     let items = document.getElementsByClassName("carrusel-item");
 
-    if (n >= items.length) { indice = 0 }
-    if (n < 0) { indice = items.length - 1 }
+    if (indice >= items.length) { indice = 0 }
+    if (indice < 0) { indice = items.length - 1 }
 
     for (i = 0; i < items.length; i++) {
         items[i].style.display = "none";
@@ -81,4 +125,3 @@ function mostrarImagenes(n) {
     items[indice].style.display = "block";
     items[indice].classList.add("active");
 }
-
