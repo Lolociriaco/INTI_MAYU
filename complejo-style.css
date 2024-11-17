@@ -552,6 +552,7 @@ justify-content: center;
     /* --------------MODAL-----------------*/
     .prev, .next {
         font-size: 20px;
+        user-select: none;
     }
 
     .modal-slide img {
@@ -565,7 +566,7 @@ justify-content: center;
         width: 400px;
         object-fit: cover;
         height: 450px;
-        width: 75vw;
+        width: 76vw;
         overflow: hidden;
     }
 }
