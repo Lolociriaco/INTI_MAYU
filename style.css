@@ -204,6 +204,7 @@ header .logo{
     align-items: center;
     flex-direction: column;
     height: 600px;
+    padding: 25px 0;
 }
 
 .instagram h2{
@@ -222,10 +223,9 @@ header .logo{
 }
 
 .instagram-pics{
-    height: 450px;
+    height: 500px;
     width: 100%;
-    padding: 15px 150px;
-    gap: 40px;
+    padding: 20px 6vw;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -359,7 +359,7 @@ header .logo{
     header .logo img{
         width: auto;
         height: 60px;
-        border-radius: 50%;
+        border-radius: 50px;
     }
     
     header .logo{

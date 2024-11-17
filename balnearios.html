@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="balneario-style.css">
+    <link rel="stylesheet" href="complejo-style.css">
     <link rel="stylesheet" href="style.css">
     <title>Cabañas Inti Mayu</title>
 </head>
@@ -24,7 +25,9 @@
             
         </nav>
         <div class="button_contactanos">
-            <button>Contactanos</button>
+            <a href="https://wa.link/dhzbek">
+                <button>Contactanos</button>
+            </a>
         </div>
         <button class="abrir_menu">
             <i class="bi bi-list"></i>
@@ -37,7 +40,7 @@
 
     </header>
 
-    <a href="https://wa.link/ig55vg" class="whatsapp-button" target="_blank">
+    <a href="https://wa.link/dhzbek" class="whatsapp-button" target="_blank">
       <img src="pngwing.com.png" alt="WhatsApp">
   </a>
 
@@ -100,78 +103,115 @@
 </div> 
 
 
-
-
-
-<div class="carrusel-container">
-  <div class="carrusel">
-      <div class="carrusel-item">
-          <img src="IMAGENES/rioMinaClavero3.jpg" alt="Imagen 1" class="imagen-carrusel">
-          <div class="caption">Rio Mina Clavero</div>
-      </div>
-      <div class="carrusel-item">
-        <img src="IMAGENES/sierras2.jpg" alt="Imagen 1" class="imagen-carrusel">
-        <div class="caption">Mirador Nido de Aguila</div>
-    </div>
-    <div class="carrusel-item">
-        <img src="IMAGENES/residencia2.jpg" alt="Imagen 3" class="imagen-carrusel">
-        <div class="caption">La Residencia</div>
-    </div>
-    <div class="carrusel-item">
-        <img src="IMAGENES/losElefantes2.jpg" alt="Imagen 3" class="imagen-carrusel">
-        <div class="caption">Mirador Los Elefantes</div>
-    </div>
-      <div class="carrusel-item">
-        <img src="IMAGENES/rioMinaClavero.jpg" alt="Imagen 1" class="imagen-carrusel">
-        <div class="caption">Rio Mina Clavero</div>
-    </div>
-    <div class="carrusel-item active">
-        <img src="IMAGENES/nido3.jpg" alt="Imagen 1" class="imagen-carrusel">
-        <div class="caption">Nido de Aguila</div>
-    </div>
-      <div class="carrusel-item">
-          <img src="IMAGENES/losElefantes.jpg" alt="Imagen 2" class="imagen-carrusel">
-          <div class="caption">Balneario Los Elefantes</div>
-      </div>
-      <div class="carrusel-item">
-          <img src="IMAGENES/rio.jpg" alt="Imagen 3" class="imagen-carrusel">
-          <div class="caption">Rio los Sauses</div>
-      </div>
-      <div class="carrusel-item">
-        <img src="IMAGENES/residencia.jpg" alt="Imagen 3" class="imagen-carrusel">
-        <div class="caption">La Residencia</div>
-    </div>
-    <div class="carrusel-item">
-        <img src="IMAGENES/rioMinaClavero4.jpg" alt="Imagen 1" class="imagen-carrusel">
-        <div class="caption">Rio Mina Clavero</div>
-    </div>
-    <div class="carrusel-item">
-        <img src="IMAGENES/nido1.jpg" alt="Imagen 3" class="imagen-carrusel">
-        <div class="caption">Balneario Nido de Aguila</div>
-    </div>
-    <div class="carrusel-item">
-        <img src="IMAGENES/rioMinaclavero5.jpg" alt="Imagen 3" class="imagen-carrusel">
-        <div class="caption">Centro de Mina Clavero</div>
-    </div>
-    <div class="carrusel-item">
-        <img src="IMAGENES/sierras.jpg" alt="Imagen 1" class="imagen-carrusel">
-        <div class="caption">Las Altas Cumbres</div>
-    </div>
-    <div class="carrusel-item">
-        <img src="IMAGENES/minaNieve.jpg" alt="Imagen 3" class="imagen-carrusel">
-        <div class="caption">Centro de Mina Clavero</div>
-    </div>
-    <div class="carrusel-item">
-        <img src="IMAGENES/minaNieve2.jpg" alt="Imagen 3" class="imagen-carrusel">
-        <div class="caption">Rio los Sauses</div>
+    <!-- GALERIA DE IMAGENES-->
+    <div class="gallery">
+        <div class="gallery-item" onclick="openModal(0)">
+            <img src="IMAGENES/rioMinaClavero3.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(1)">
+            <img src="IMAGENES/sierras2.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(2)">
+            <img src="IMAGENES/residencia2.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(3)">
+            <img src="IMAGENES/losElefantes2.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(4)">
+            <img src="IMAGENES/rioMinaClavero.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(5)">
+            <img src="IMAGENES/nido3.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(6)">
+            <img src="IMAGENES/losElefantes.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(7)">
+            <img src="IMAGENES/rio.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(8)">
+            <img src="IMAGENES/rioMinaClavero4.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(9)">
+            <img src="IMAGENES/nido1.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(10)">
+            <img src="IMAGENES/rioMinaclavero5.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(11)">
+            <img src="IMAGENES/sierras.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(12)">
+            <img src="IMAGENES/minaNieve.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(13)">
+            <img src="IMAGENES/minaNieve2.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(14)">
+            <img src="IMAGENES/hombreConBandera.jpg" alt="Imagen 1">
+        </div>
+        
     </div>
     
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-slide">
+                <img src="IMAGENES/rioMinaClavero3.jpg" alt="Imagen 1">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/sierras2.jpg" alt="Imagen 2">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/residencia2.jpg" alt="Imagen 3">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/losElefantes2.jpg" alt="Imagen 4">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/rioMinaClavero.jpg" alt="Imagen 5">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/nido3.jpg" alt="Imagen 6">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/losElefantes.jpg" alt="Imagen 7">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/rio.jpg" alt="Imagen 8">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/rioMinaClavero4.jpg" alt="Imagen 9">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/nido1.jpg" alt="Imagen 6">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/rioMinaclavero5.jpg" alt="Imagen 10">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/sierras.jpg" alt="Imagen 11">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/minaNieve.jpg" alt="Imagen 12">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/minaNieve2.jpg" alt="Imagen 13">
+            </div>
+            <div class="modal-slide">
+                <img src="IMAGENES/hombreConBandera.jpg" alt="Imagen 14">
+            </div>
+            
+            <div class="modal-sombra"></div>
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
 
-      <!-- Flechas de navegación -->
-      <a class="prev" onclick="cambiarImagen(-1)">&#10094;</a>
-      <a class="next" onclick="cambiarImagen(1)">&#10095;</a>
-  </div>
-</div>
+
+
 
 
 <div class="text-container">
@@ -187,6 +227,7 @@
 
 </div>
 
+<div class="modal-sombra"></div>
 
 
 

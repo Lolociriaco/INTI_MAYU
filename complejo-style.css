@@ -298,6 +298,7 @@ justify-content: center;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .gallery-item:hover img {
@@ -323,7 +324,7 @@ justify-content: center;
 .modal-sombra{
     display: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -337,7 +338,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .modal-slide {
@@ -387,7 +388,7 @@ justify-content: center;
 }
 
 .prev:hover, .next:hover {
-    color: #f2f2f2;
+    color: #e9e9e9;
 }
 
 
