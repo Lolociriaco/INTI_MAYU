@@ -555,11 +555,13 @@ justify-content: center;
     }
 
     .modal-slide img {
-        height: 50vh;
+        height: auto;
+        width: 75vw;
     }
 
     .modal-slide {
         display: none;
-        max-height: 35%;
+        width: 400px;
+        object-fit: cover;
     }
 }
