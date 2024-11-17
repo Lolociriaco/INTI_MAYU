@@ -156,6 +156,11 @@ p {
         display: flex;
         justify-content: center;
     }
+
+    .gallery-item:last-child{
+        display: none;
+
+    }
 }
 
 @media (max-width: 576px) {
