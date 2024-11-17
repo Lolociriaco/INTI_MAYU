@@ -555,8 +555,14 @@ justify-content: center;
     }
 
     .modal-slide img {
-        height: auto;
-        width: 75vw;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .modal-slide{
+        height: 450px;
+        width: 90vw;
     }
 
     .modal-slide {
