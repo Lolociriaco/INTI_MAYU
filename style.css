@@ -21,6 +21,7 @@ header .logo img{
     width: auto;
     height: 53px;
     border-radius: 50px;
+    overflow: hidden;
 }
 
 header .logo{
