@@ -59,15 +59,20 @@ function copyEmail(){
 // -------- MODAL ----------
 
 
+let sombra = document.querySelector(".modal-sombra")
 let slideIndex = 0;
+
+sombra.addEventListener("click", closeModal)
 
 function openModal(index) {
     document.getElementById("modal").style.display = "block";
+    sombra.classList.add("modal-sombra-active")
     showSlide(index);
 }
 
 function closeModal() {
     document.getElementById("modal").style.display = "none";
+    sombra.classList.remove("modal-sombra-active")
 }
 
 function showSlide(index) {
@@ -104,18 +109,20 @@ function changeSlide(step) {
 let indice = 0;
 mostrarImagenes(indice);
 
-// Cambia de imagen cuando se presionan las flechas
 function cambiarImagen(n) {
     mostrarImagenes(indice += n);
 }
 
 // Mostrar imagen actual
-function mostrarImagenes(indice) {
+function mostrarImagenes(n) {
     let i;
     let items = document.getElementsByClassName("carrusel-item");
 
-    if (indice >= items.length) { indice = 0 }
-    if (indice < 0) { indice = items.length - 1 }
+    if (n >= items.length) {
+        indice = 0; 
+    } else if (n < 0) {
+        indice = items.length - 1;
+    }
 
     for (i = 0; i < items.length; i++) {
         items[i].style.display = "none";

@@ -7,8 +7,7 @@
     overflow: hidden;
     margin: 60px auto;
     display: grid;
-    justify-items: center; /* Centra horizontalmente los elementos */
-    align-items: center;   /* Asegura que el carrusel se alinee verticalmente también */
+
 }
 
 .carrusel {
@@ -201,12 +200,17 @@ p {
 @media (max-width: 992px) {
 
     .carrusel-container{
-        width: 95vw;
+        width: 90vw;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .tarjeta {
         flex-direction: column;
         margin: 20px;
+        
     }
 
     .tarjeta:nth-child(even) {
