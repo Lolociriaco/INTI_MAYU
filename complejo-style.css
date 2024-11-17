@@ -560,14 +560,12 @@ justify-content: center;
         object-fit: cover;
     }
 
-    .modal-slide{
-        height: 450px;
-        width: 75vw;
-    }
-
     .modal-slide {
         display: none;
         width: 400px;
         object-fit: cover;
+        height: 450px;
+        width: 75vw;
+        overflow: hidden;
     }
 }
