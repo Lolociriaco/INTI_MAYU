@@ -19,6 +19,10 @@ justify-content: center;
     overflow: visible;
 }
 
+.info-util{
+    flex-direction: row-reverse;
+}
+
 
 .image-container {
     flex: 1 1 55%;
@@ -58,15 +62,6 @@ justify-content: center;
     font-style: normal;
 }
 
-.content p {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #2c2c2c;
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 .content ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -83,11 +78,79 @@ justify-content: center;
 }
 
 
+/*  INFORMACION UTIL */
+
+.info-util{
+    margin: 70px 0;
+}
+
+.items-container{
+    margin-left: 30px;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.content h4 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #2c2c2c;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.items img{
+    width: 38px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.items-container ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.items-container ul li{
+    margin: 15px 40px 5px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.items-container span{
+    margin: 20px 7px;
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.bb{ /*BB STANDS FOR BORDER BOTTOM, I´M JUST USING SLANG*/
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.items-container ul li img{
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 /*FACILITIES*/
 
 .facilities-container{
     display: flex;
     justify-content: center;
+    margin: 70px auto;
 }
 
 .facilities-card{
@@ -97,7 +160,6 @@ justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     width: 80vw;
-    margin: 50px auto;
     border-radius: 8px;
     overflow: visible;
 }
@@ -281,7 +343,7 @@ justify-content: center;
     gap: 50px;
     width: 100%;
     max-width: 1300px;
-    margin: 10px auto 50px auto;
+    margin: 70px auto 70px auto;
 }
 
 .gallery-item {
@@ -302,10 +364,12 @@ justify-content: center;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 
-
+.gallery .last{
+    display: none;
+}
 
 /* ------------------------------ MODAL ----------------------------- */
 
@@ -324,7 +388,7 @@ justify-content: center;
 .modal-sombra{
     display: none;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -343,14 +407,15 @@ justify-content: center;
 
 .modal-slide {
     display: none;
-    max-width: 75%;
-    max-height: 75%;
+    
+    width: 35vw;
+    max-height: auto;
     z-index: 1000;
 }
 
 .modal-slide img {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     border-radius: 5px;
 }
 
@@ -444,6 +509,11 @@ justify-content: center;
 
 
     /*INSTALACIONES*/
+
+    .facilities-container{
+        margin: 30px auto;
+    }
+
     .facilities-content ul{
         flex-direction: column;
         justify-content: center;
@@ -455,7 +525,6 @@ justify-content: center;
 
     .facilities-card{
         width: 90vw;
-        margin: 50px auto;
     }
 
     .facilities-content{
@@ -529,16 +598,63 @@ justify-content: center;
         font-family: "Edu AU VIC WA NT Hand";
     }
 
-    
-    /* GALERIA IMAGENES */
 
+    /* INFO UTIL */
+
+    .info-util{
+        margin: 30px 0;
+    }
+
+
+
+
+
+
+    .items-container{
+        margin-left: 0;
+    }
+    
+    .items{
+        margin: 12px 0;
+    }
+    
+    .content h4 {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    
+    .items img{
+        width: 30px;
+    }
+    
+    
+    .items-container ul li{
+        margin: 10px 40px 0 40px;
+        font-size: 15px;
+        justify-content: center;
+    }
+    
+    .items-container span{
+        font-size: 15px;
+    }
+    
+    
+    .items-container ul li img{
+        width: 33px;
+        height: auto;
+    }
+
+
+
+
+    /* GALERIA IMAGENES */
 
     .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
         gap: 15px;
         width: 90vw;
-        margin: 0 auto 25px auto;
+        margin: 30px auto;
     }
 
     .gallery-item {
@@ -546,13 +662,16 @@ justify-content: center;
         aspect-ratio: 5 / 5; /* Esto establece una proporción para mantener la altura equilibrada */
     }
 
-
+    .gallery .last{
+        display: block;
+    }
 
 
     /* --------------MODAL-----------------*/
     .prev, .next {
         font-size: 20px;
         user-select: none;
+        z-index: 1000;
     }
 
     .modal-slide img {
@@ -566,7 +685,7 @@ justify-content: center;
         width: 400px;
         object-fit: cover;
         height: 450px;
-        width: 76vw;
+        width: 93vw;
         overflow: hidden;
     }
 }
