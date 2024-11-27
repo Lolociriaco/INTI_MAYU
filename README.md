@@ -4,7 +4,7 @@ Este proyecto es una página web desarrollada para un complejo de cabañas. Tien
 ## Características principales 🌟
 
     - Diseño responsivo: Compatible con dispositivos móviles, tablets y computadoras.
-    - Informacion Turistica: Descripcion del lugar y mapa con la ubicacion exacta de cada balneario
+    - Informacion Turistica: Descripcion del lugar y mapa con la ubicacion exacta de cada balneario.
     - Galería interactiva: Exhibe las cabañas con imágenes atractivas y detalladas.
     - Contacto directo: Enlace rápido para comunicarse vía WhatsApp con el complejo.
 
