@@ -22,10 +22,13 @@ header .logo img{
     height: 53px;
     border-radius: 50px;
     overflow: hidden;
+    box-shadow: 1px 4px 19px -6px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 1px 4px 19px -6px rgba(0,0,0,0.45);
+    -moz-box-shadow: 1px 4px 19px -6px rgba(0,0,0,0.45);
 }
 
 header .logo{
-    padding-top: 5px;
+    padding-top: 5px; 
 }
 
 .nav_container{
@@ -148,7 +151,7 @@ header .logo{
 /*TITULO INDEX*/
 
 .background-container{
-    background-image: url(sierras-img.jpeg);
+    background-image: url(IMAGENES/sierras-img.jpeg);
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;

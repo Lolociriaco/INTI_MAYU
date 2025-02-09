@@ -1,6 +1,7 @@
 # Página Web para Complejo de Cabañas 🏡
 
 Este proyecto es una página web desarrollada para un complejo de cabañas. Tiene un diseño moderno y está optimizado para dispositivos móviles, pensado para promocionar y facilitar el contacto directo con los clientes.
+
 ## Características principales 🌟
 
     - Diseño responsivo: Compatible con dispositivos móviles, tablets y computadoras.
