@@ -5,6 +5,7 @@
 .card-container{
 display: flex;
 justify-content: center;
+margin: 0 50px;
 }
 
 .card{
@@ -468,7 +469,9 @@ justify-content: center;
 
 @media (max-width: 870px) {
     /*TARGETA EXPERIENCIAS*/
-
+    .card-container{
+        margin: 0;
+    }
     .images-section{
         width: 90vw;
     }
